@@ -1,0 +1,1 @@
+Chạy chương trình `webcam/collect_dataset.py` để thu thập ảnh. Ảnh sẽ được lưu trong các thư mục theo lớp cử chỉ và phiên ghi hình. Hãy thu thập ít nhất 3 phiên riêng biệt cho mỗi lớp trước khi chạy `training/prepare_split.py`.

@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+dataset/raw/**/*.png
+dataset/processed/**
+models/*.keras
+models/*.tflite
+models/*.h
+models/*.cc
+models/*.cpp
+*.log

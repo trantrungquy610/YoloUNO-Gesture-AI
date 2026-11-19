@@ -1,0 +1,8 @@
+# Khuyến nghị: Python 3.10 hoặc 3.11 (bản 64-bit)
+opencv-python>=4.9,<5
+numpy>=1.26,<2
+Pillow>=10,<12
+tensorflow==2.16.1
+matplotlib>=3.8,<4
+scikit-learn>=1.4,<2
+requests>=2.31,<3

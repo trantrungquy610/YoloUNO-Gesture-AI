@@ -1,0 +1,5 @@
+// Đoạn mã chẩn đoán tạm thời: dán vào setup() ngay sau Serial.begin(115200).
+Serial.printf("[MEM] Free heap: %u bytes\\n", ESP.getFreeHeap());
+Serial.printf("[MEM] PSRAM found: %s\\n", psramFound() ? "YES" : "NO");
+Serial.printf("[MEM] PSRAM size: %u bytes\\n", ESP.getPsramSize());
+Serial.printf("[MEM] Free PSRAM: %u bytes\\n", ESP.getFreePsram());
