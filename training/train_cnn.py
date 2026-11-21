@@ -37,7 +37,9 @@ model = keras.Sequential([
     layers.Conv2D(16, 3, padding="same", activation="relu"),
     layers.MaxPooling2D(),
     layers.Conv2D(24, 3, padding="same", activation="relu"),
-    layers.GlobalAveragePooling2D(),
+    layers.MaxPooling2D(),
+    layers.Flatten(),
+    layers.Dense(32, activation="relu"),
     layers.Dense(5, activation="softmax", name="probabilities"),
 ])
 model.compile(optimizer=keras.optimizers.Adam(1e-3),

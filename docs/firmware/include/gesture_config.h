@@ -9,10 +9,10 @@ static constexpr float GESTURE_CONFIDENCE_THRESHOLD = 0.70f;
 
 // Keep class order identical to training/labels.json.
 enum GestureClass : uint8_t {
-    GESTURE_OPEN_PALM = 0,
-    GESTURE_FIST = 1,
-    GESTURE_THUMBS_UP = 2,
-    GESTURE_VICTORY = 3,
-    GESTURE_NO_HAND = 4,
+    GESTURE_FIST = 0,
+    GESTURE_NO_HAND = 1,
+    GESTURE_OPEN_PALM = 2,
+    GESTURE_THUMBS_UP = 3,
+    GESTURE_VICTORY = 4,
     GESTURE_UNKNOWN = 255
 };

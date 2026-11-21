@@ -101,6 +101,13 @@ Lệnh này tạo tệp `models/gesture_model_int8.tflite`. Tệp xuất ra hi�
 
 Chỉ chuyển tệp `.tflite` thành mảng byte C/C++ sau khi hoàn tất các bước kiểm tra trên.
 
+```powershell
+python training/convert_tflite_to_cpp.py
+```
+
+```powershell
+python webcam/webcam_sender.py --url http://192.168.8.114:8080/api/gesture/frame --fps 2 --preview
+```
 ## 7. Tích hợp firmware và Gateway
 
 Đọc hai tài liệu sau trước khi tích hợp:
@@ -130,3 +137,7 @@ Sử dụng ngưỡng độ tin cậy (ban đầu là `0.70`) kết hợp với 
 - `webcam_sender.py` chỉ nên sử dụng sau khi endpoint nhận khung hình trên firmware đã được triển khai.
 - Bắt đầu với tốc độ 2 FPS; chỉ tăng sau khi đo độ trễ từ đầu đến cuối và xác nhận hệ thống hoạt động ổn định.
 - Kiểm tra PSRAM thực tế của bo mạch khi chạy bằng `psramFound()` và `ESP.getPsramSize()`, dù tài liệu sản phẩm OhStem công bố dung lượng tối đa 8 MB.
+
+## Chạy:
+
+- python .\webcam\webcam_sender.py --url http://192.168.203.114:8080/api/gesture/frame --fps 2 --preview

@@ -9,3 +9,5 @@ models/*.h
 models/*.cc
 models/*.cpp
 *.log
+
+dataset/
