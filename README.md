@@ -106,7 +106,7 @@ python training/convert_tflite_to_cpp.py
 ```
 
 ```powershell
-python webcam/webcam_sender.py --url http://192.168.8.114:8080/api/gesture/frame --fps 2 --preview
+python webcam/webcam_sender.py --url http://192.168.45.114:8080/api/gesture/frame --fps 2 --preview
 ```
 ## 7. Tích hợp firmware và Gateway
 
